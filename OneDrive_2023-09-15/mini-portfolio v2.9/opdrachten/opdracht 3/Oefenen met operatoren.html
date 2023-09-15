@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>oefenen met operatoren</title>
+  </head>
+  <body>
+    <script>
+     
+      var getal = prompt("Voer een getal in:");
+
+  
+  getal = parseFloat(getal);
+
+  
+  var som = getal + 10;
+  var verschil = getal - 5;
+  var product = getal * 3;
+ var quotient = getal / 2;
+
+ 
+  document.write("Het ingevoerde getal was: " + getal + "<br>");
+  document.write("Getal + 10 = " + som + "<br>");
+  document.write("Getal - 5 = " + verschil + "<br>");
+  document.write("Getal * 3 = " + product + "<br>");
+  document.write("Getal / 2 = " + quotient + "<br>");
+
+  som += 5;
+  verschil -= 3;
+  product *= 2;
+  quotient /= 4;
+
+  document.write("<br>");
+  document.write("Getal + 10 + 5 = " + som + "<br>");
+  document.write("Getal - 5 - 3 = " + verschil + "<br>");
+  document.write("Getal * 3 * 2 = " + product + "<br>");
+  document.write("Getal / 2 / 4 = " + quotient + "<br>");
+</script>
+  </body>
+</html>
