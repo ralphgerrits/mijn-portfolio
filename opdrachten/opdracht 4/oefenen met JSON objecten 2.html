@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON en JavaScript</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>JSON en JavaScript</h1>
+  <script>
+    
+    var jsonObject = {
+      "naam": "ralph gerrits",
+      "leeftijd": 16,
+      "stad": "nieuw-vennep"
+    };
+
+    
+    console.log(jsonObject);
+
+   
+    var jsonString = JSON.stringify(jsonObject);
+
+  
+    console.log(jsonString);
+
+   
+    var parsedObject = JSON.parse(jsonString);
+
+ 
+    console.log(parsedObject);
+
+  </script>
+</body>
+</html>

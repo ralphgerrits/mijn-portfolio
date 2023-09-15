@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript in HTML</title>
+</head>
+<body>
+
+  <script > 
+    var huidigeDatum = new Date();
+    
+ 
+    var dag = huidigeDatum.getDate();
+    var maand = huidigeDatum.getMonth() + 1;  
+    var jaar = huidigeDatum.getFullYear();
+    console.log("Huidige datum: " + dag + "-" + maand + "-" + jaar);
+    
+   
+    console.log("Maand: " + maand);
+    console.log("Jaar: " + jaar);
+    
+     
+    var andereDatum = new Date("2022-06-30");
+    
+     
+      console.log("andereDatum is later dan huidigeDatum");
+    } else if  { (huidigeDatum > andereDatum) 
+      console.log("andereDatum is eerder dan huidigeDatum");
+    } else {
+      console.log("andereDatum is gelijk aan huidigeDatum");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Leeftijd om te stemmen</title>
+</head>
+<body>
+	<h1>Leeftijd om te stemmen</h1>
+	<p>Voer hieronder je leeftijd in om te zien of je oud genoeg bent om te stemmen:</p>
+    <form>
+        <label for="leeftijd">Leeftijd:</label>
+        <input type="number" id="leeftijd" name="leeftijd">
+    
+        <button type="button" onclick="checkLeeftijd()">Controleer</button>
+    </form>
+    
+    <p id="output"></p>
+    
+    <script>
+        function checkLeeftijd() {
+            var leeftijd = document.getElementById("leeftijd").value;
+    
+            if (leeftijd >= 18) {
+                document.getElementById("output").innerHTML = "Je bent oud genoeg om te stemmen.";
+            } else {
+                document.getElementById("output").innerHTML = "Je bent nog niet oud genoeg om te stemmen.";
+            }
+        }
+    </script>
+    </body>
+    </html>
